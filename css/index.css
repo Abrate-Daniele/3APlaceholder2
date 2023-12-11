@@ -94,8 +94,9 @@ aside{
     justify-content: space-around;
     align-items: center;
     animation-name: rotazione;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes rotazione{
@@ -116,20 +117,80 @@ aside{
 #cerchio1{
     background-color: blue;
     margin-left: 10px;
+    animation-name: avvicinare1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #cerchio2{
     background-color: purple;
     margin-right: 100px;
+    animation-name: avvicinare2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-
 
 #cerchio3{
     background-color: red;
     margin-left: 100px;
+    animation-name: avvicinare3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #cerchio4{
     background-color: green;
     margin-right: 10px;
+    animation-name: avvicinare4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes avvicinare1{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes avvicinare2{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(30px, 10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+@keyframes avvicinare3{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-30px, -10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+@keyframes avvicinare4{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
