@@ -1,0 +1,135 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gainsboro;
+    font-family: monospace;
+}
+
+body > header{
+    background-color: rgb(39, 39, 255);
+    color:gainsboro;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30pt;
+    line-height: 100px;
+    width: 100%;
+    height: 100px;
+}
+
+main{
+    padding-top:10px;
+    display: flex;
+    width: 100%;
+}
+
+section{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: auto;
+    height: 70vh;
+}
+
+article, aside{
+    background-color: white;
+    width: 90%;
+}
+
+article{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+article header, article main{
+    background-color: gainsboro;
+
+}
+
+.img, .testo > header, .testo > main{
+    background-color: gainsboro;
+    height: 15px;
+}
+
+.img{
+    height: 50px;
+    width: 50px;
+}
+
+.testo{
+    width: 80%;
+}
+
+.testo > header{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.testo > main{
+    width: 40%;
+}
+
+aside{
+    width: 40%;
+    height: 300px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: rotazione;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotazione{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#loading > div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#cerchio1{
+    background-color: blue;
+    margin-left: 10px;
+}
+
+#cerchio2{
+    background-color: purple;
+    margin-right: 100px;
+}
+
+
+#cerchio3{
+    background-color: red;
+    margin-left: 100px;
+}
+
+#cerchio4{
+    background-color: green;
+    margin-right: 10px;
+}
