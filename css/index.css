@@ -100,6 +100,7 @@ aside{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    box-shadow: 10px 20px 40px aqua;
 }
 #cerchio1{
     background-color: blue;
@@ -164,4 +165,23 @@ aside{
     100%{
         transform: translateY(0px);
     }
+}
+#art1{
+    cursor: progress;
+}
+#art2{
+    cursor: pointer;
+}
+#art3{
+    cursor: help;
+}
+#art4{
+    cursor: crosshair;
+}
+#art5{
+    cursor: zoom-in;
+}
+body > header{
+    cursor: url(../img/OIP.png), auto;
+    text-shadow: 5px 5px 5px aqua,10px 10px 5px purple;
 }
